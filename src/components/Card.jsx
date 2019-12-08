@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import test from '../images/test-bird.jpg';
 import eagle from '../images/eagle.svg';
+import BirdImages from '../BirdImages';
 
 import CardTag from './CardTag';
 
@@ -35,7 +35,7 @@ export default class Card extends Component {
       <div className="bird-card slide fade">
         <div className="card-contents">
           <div className="card-img">
-            <img src={test} alt='a random test bird' />
+            <img src={BirdImages[this.props.img]} alt={this.props.img} />
           </div>
           <div className="bird-info">
             <div className="names-and-span">
@@ -50,7 +50,7 @@ export default class Card extends Component {
             </div>
             <p>{this.props.description}</p>
             <div className="bird-card-tags">
-              {this.state.tagOrder.map(tag => <CardTag tag={tag} filters={this.props.filters} />)}
+              {this.state.tagOrder.map(tag => <CardTag tag={tag} filters={this.props.filters} nametag={this.props.birdName + tag} />)}
             </div>
           </div>
         </div>
