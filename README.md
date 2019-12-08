@@ -8,7 +8,7 @@ After many iterations of sketches and brief surveys, people seemed to gravitate 
 There are filters included for birds that look weird, act weird, and my favorite birds of those shown (for fun). These filters can be used in any combination. This is also true of the sorting functions, of which there are two (though only one can be used at a time) - my recommended order, and sorted by wingspan (as a nod to the game that brought about the idea).
 
 ## Running the App
-Running the app locally is very easy, simply navigate to the top-level directory and run the following:
+Running the app locally is very easy, if you can see the `build` directory, simply navigate to the top-level directory and run the following:
 ```
 npm install -g serve (if you don't already have it installed)
 serve -s build
@@ -16,10 +16,11 @@ serve -s build
 
 The app should now be running at localhost:5000.
 
-If you are having issues with serving the website, try running 
+If you are having issues with serving the website, or `build` does not already exist, try running 
 `npm run build`
 in the top-level directory and then retry
 ```
+npm install -g serve (if you don't already have it installed)
 serve -s build
 ```
 
