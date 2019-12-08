@@ -9,20 +9,20 @@ There are filters included for birds that look weird, act weird, and my favorite
 
 ## Running the App
 Running the app locally is very easy, simply navigate to the top-level directory and run the following:
-`
+```
 npm install -g serve (if you don't already have it installed)
 serve -s build
-`
+```
 
 The app should now be running at localhost:5000.
 
 If you are having issues with serving the website, try running 
 `npm run build`
 in the top-level directory and then retry
-`
+```
 npm install -g serve (if you don't already have it installed)
 serve -s build
-`
+```
 
 ## Architecture
 
