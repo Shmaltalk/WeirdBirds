@@ -20,7 +20,6 @@ If you are having issues with serving the website, try running
 `npm run build`
 in the top-level directory and then retry
 ```
-npm install -g serve (if you don't already have it installed)
 serve -s build
 ```
 
