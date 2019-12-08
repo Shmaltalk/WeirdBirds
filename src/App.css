@@ -44,14 +44,103 @@ button {
   border-width: 1px;
 }
 
-.filter.true {
-  background-color: #2684FF;
-}
-
 button:hover {
   background-color: #2684FF;
 }
 
+.filter.true {
+  background-color: #2684FF;
+}
+
+.cardsList {
+  display: flex;
+  width: 70vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3px;
+}
+
+.bird-card {
+  width: 270px;
+  height: 380px;
+  background-color: #DEEBFF;
+  border-radius: 10px;
+  margin: 5px;
+}
+.card-img img {
+  width: 100%;
+  height: 170px;
+}
+
+.card-contents {
+  margin: 9px;
+  height: 365px;
+}
+.bird-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 53%;
+  text-align: left;
+  color: #24292d;
+}
+.names-and-span {
+  display: flex;
+  justify-content: space-between;
+}
+.common-name {
+  font-weight: bolder;
+}
+.scientific-name {
+  font-style: italic;
+}
+.wingspan {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 49px;
+}
+.wingspan-val {
+  margin: 0px;
+  text-align: center;
+}
+.wingspan img {
+
+  margin-top: -8px;
+
+}
+
+.bird-card-tags {
+  display: flex;
+  justify-content: left;
+  color: white;
+
+}
+.bird-card-tags > div {
+  background-color: #4c6085;
+  margin: 5px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border-color: #4c6085;
+  border-width: 1px;
+  font-size: 11px;
+}
+
 h1 {
   font-size: 58px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+h3 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 5px;
+}
+
+a {
+  color: #36f1cd;
 }

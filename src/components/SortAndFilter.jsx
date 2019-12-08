@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Select from 'react-select';
 
 const sortOptions = [{value: 'sort by...', label: 'sort by...'}, {value: 'recommended', label: 'recommended'}, {value:'wingspan', label:'wingspan'}]
-const filterTypes = {looks: 'looks weird', acts: 'acts weird', favorites: "talie's favorites"}
+const filterTypes = {acts: 'acts weird', looks: 'looks weird', favorites: "talie's favorites"}
 
 export default class SortAndFilter extends Component {
   constructor(props) {

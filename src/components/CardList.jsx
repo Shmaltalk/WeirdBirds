@@ -57,7 +57,7 @@ export default class CardList extends Component {
   render() {
     return (
       <div className="cardsList">
-        { this.state.filteredBirds.map(bird => <Card key={bird.birdName} {...bird}/>) }
+        { this.state.filteredBirds.map(bird => <Card key={bird.birdName} {...bird} filters={this.props.filters} />) }
       </div>
     )
   }
