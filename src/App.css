@@ -15,6 +15,7 @@
 
 .sort-and-filters {
   width: 370px;
+  margin: 8px;
 }
 
 .filters {
@@ -56,7 +57,7 @@ button:hover {
   display: flex;
   width: 70vw;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 7px;
 }
 

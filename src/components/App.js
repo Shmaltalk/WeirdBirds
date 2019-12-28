@@ -35,8 +35,10 @@ class App extends Component {
         <div className="App-body">
           <h1>Weird Birds</h1>
           <h3>Inspired by <a href="https://stonemaiergames.com/games/wingspan/">Wingspan</a></h3>
-          <SortAndFilter filters={this.state.filters} updateFilter={this.updateFilter} updateSort={this.updateSort} />
-          <Cardlist birds={birds} filters={this.state.filters} sortFunction={this.state.sortFunction}/>
+          <div className="content">
+            <SortAndFilter filters={this.state.filters} updateFilter={this.updateFilter} updateSort={this.updateSort} />
+            <Cardlist birds={birds} filters={this.state.filters} sortFunction={this.state.sortFunction}/>
+          </div>
           <div>A fun project by Talie Massachi</div>
           <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
