@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/birds/static/css/main.20dcde53.chunk.css",
+    "main.js": "/birds/static/js/main.91675431.chunk.js",
+    "main.js.map": "/birds/static/js/main.91675431.chunk.js.map",
+    "runtime-main.js": "/birds/static/js/runtime-main.6d063b73.js",
+    "runtime-main.js.map": "/birds/static/js/runtime-main.6d063b73.js.map",
+    "static/js/2.7ca2d203.chunk.js": "/birds/static/js/2.7ca2d203.chunk.js",
+    "static/js/2.7ca2d203.chunk.js.map": "/birds/static/js/2.7ca2d203.chunk.js.map",
+    "index.html": "/birds/index.html",
+    "precache-manifest.71be90c7f21e9dcb5c8137abf23d0d2a.js": "/birds/precache-manifest.71be90c7f21e9dcb5c8137abf23d0d2a.js",
+    "service-worker.js": "/birds/service-worker.js",
+    "static/css/main.20dcde53.chunk.css.map": "/birds/static/css/main.20dcde53.chunk.css.map",
+    "static/js/2.7ca2d203.chunk.js.LICENSE": "/birds/static/js/2.7ca2d203.chunk.js.LICENSE",
+    "static/media/Hoatzin.jpg": "/birds/static/media/Hoatzin.24f4ccbf.jpg",
+    "static/media/Secretarybird.jpg": "/birds/static/media/Secretarybird.c878fdba.jpg",
+    "static/media/bee_eater.jpg": "/birds/static/media/bee_eater.1126f901.jpg",
+    "static/media/eagle.svg": "/birds/static/media/eagle.e88d9fad.svg",
+    "static/media/finch.jpg": "/birds/static/media/finch.14b3c455.jpg",
+    "static/media/frigatebird.jpg": "/birds/static/media/frigatebird.4f5ac8e8.jpg",
+    "static/media/kakapo.jpg": "/birds/static/media/kakapo.403b4444.jpg",
+    "static/media/oilbird.png": "/birds/static/media/oilbird.0e429185.png",
+    "static/media/prairie_chicken.jpg": "/birds/static/media/prairie_chicken.95294993.jpg",
+    "static/media/red_crossbill.jpg": "/birds/static/media/red_crossbill.8a426da6.jpg",
+    "static/media/ruff.jpg": "/birds/static/media/ruff.0be58cb2.jpg",
+    "static/media/shrike.jpg": "/birds/static/media/shrike.3cd0023f.jpg",
+    "static/media/widowbird.jpeg": "/birds/static/media/widowbird.e8baf91d.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d063b73.js",
+    "static/js/2.7ca2d203.chunk.js",
+    "static/css/main.20dcde53.chunk.css",
+    "static/js/main.91675431.chunk.js"
+  ]
+}
