@@ -14,12 +14,14 @@ class App extends Component {
       filters: {acts: false, looks: false, favorites: false},
       sortFunction: ''
     }
-    this.updateFilters = this.updateFilters.bind(this);
+    this.updateFilter = this.updateFilter.bind(this);
     this.updateSort = this.updateSort.bind(this);
   }
 
-  updateFilters(newFilters) {
-    this.setState({ filters: newFilters });
+  updateFilter(filter) {
+    const tempFilters = {...this.state.filters}
+    tempFilters[filter] = !this.state.filters[filter]
+    this.setState({ filters: tempFilters });
   }
 
   updateSort(newSort) {
@@ -30,14 +32,14 @@ class App extends Component {
     console.log(this.state);
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-body">
           <h1>Weird Birds</h1>
           <h3>Inspired by <a href="https://stonemaiergames.com/games/wingspan/">Wingspan</a></h3>
-          <SortAndFilter filters={this.state.filters} updateFilters={this.updateFilters} updateSort={this.updateSort} />
+          <SortAndFilter filters={this.state.filters} updateFilter={this.updateFilter} updateSort={this.updateSort} />
           <Cardlist birds={birds} filters={this.state.filters} sortFunction={this.state.sortFunction}/>
           <div>A fun project by Talie Massachi</div>
           <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </header>
+        </div>
       </div>
     ); 
   }

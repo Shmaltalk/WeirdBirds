@@ -7,24 +7,6 @@ const filterTypes = {acts: 'acts weird', looks: 'looks weird', favorites: "talie
 export default class SortAndFilter extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      filters: this.props.filters,
-      sort: '',
-      submitText: 'submit'
-    };
-  }
-
-  changeFilter(filter) {
-    const tempFilters = {...this.state.filters}
-    tempFilters[filter] = !this.state.filters[filter]
-    this.setState({ filters: tempFilters, submitText: 'submit(!)' })
-  }
-
-  submitSettings() {
-    this.props.updateFilters(this.state.filters);
-    this.props.updateSort(this.state.sort);
-
-    this.setState({ submitText: 'submit' });
   }
 
   onSortSelect(option) {
@@ -35,7 +17,7 @@ export default class SortAndFilter extends Component {
       sorter = option.value;
     }
 
-    this.setState({ sort: sorter, submitText: 'submit(!)' });
+    this.props.updateSort(sorter);
   }
 
   render() {
@@ -44,13 +26,12 @@ export default class SortAndFilter extends Component {
       <div className="sort-and-filters">
         <div className="filters">
           {filterNames.map(filter => {
-              return <button key={filter} className={'filter ' + this.state.filters[filter]} onClick={() => {this.changeFilter(filter)}}> {filterTypes[filter]} </button>
+              return <button key={filter} className={'filter ' + this.props.filters[filter]} onClick={() => {this.props.updateFilter(filter)}}> {filterTypes[filter]} </button>
             }
           )}
         </div>
         <div className="dropdown-and-submit">
             <Select options={sortOptions} onChange={(option) => this.onSortSelect(option)} placeholder="sort by..." />
-            <button key="submit" onClick={() => {this.submitSettings()}}>{this.state.submitText}</button>
         </div>
       </div>
     );
